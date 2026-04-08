@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #090e16;
+  --foreground: #f4f7fb;
+  --muted: #9f9fa9;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --surface-hover: rgba(42, 38, 39, 0.5);
+  --surface-highlight: rgba(23, 36, 58, 0.54);
+  --surface-highlight-strong: #17243a;
+  --surface-card: #171717;
+  --surface-chip: #fafafa;
+  --surface-chip-text: #090e16;
+  --surface-chip-border: rgba(255, 255, 255, 0.08);
+  --timeline-line: #374151;
+  --timeline-dot-bg: #1e3a8a;
+  --timeline-dot-icon: #bfdbfe;
+  --timeline-ring: #090e16;
+  --timeline-title: #f4f7fb;
+  --timeline-time: #9ca3af;
+  --timeline-body: #9ca3af;
+  --shadow-color: rgba(15, 23, 42, 0.2);
+}
+
+:root[data-theme='light'] {
+  --background: #f4f7fb;
+  --foreground: #152033;
+  --muted: #607089;
+  --border-color: rgba(21, 32, 51, 0.12);
+  --surface-hover: rgba(202, 213, 227, 0.55);
+  --surface-highlight: rgba(202, 213, 227, 0.45);
+  --surface-highlight-strong: #dbe4f0;
+  --surface-card: #dbe4f0;
+  --surface-chip: #dbe4f0;
+  --surface-chip-text: #152033;
+  --surface-chip-border: rgba(21, 32, 51, 0.08);
+  --timeline-line: #cbd5e1;
+  --timeline-dot-bg: #dbeafe;
+  --timeline-dot-icon: #1d4ed8;
+  --timeline-ring: #f4f7fb;
+  --timeline-title: #152033;
+  --timeline-time: #64748b;
+  --timeline-body: #526077;
+  --shadow-color: rgba(148, 163, 184, 0.24);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border-theme: var(--border-color);
+  --color-surface-highlight: var(--surface-highlight);
+  --color-surface-chip: var(--surface-chip);
+  --color-surface-chip-text: var(--surface-chip-text);
+  --color-surface-chip-border: var(--surface-chip-border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
+  min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a,
+button {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.shadow-custom {
+  box-shadow: 0 24px 60px var(--shadow-color);
 }
