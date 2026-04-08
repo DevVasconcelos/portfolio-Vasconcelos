@@ -3,6 +3,15 @@ import { FaChevronLeft, FaChevronRight, FaReact } from 'react-icons/fa';
 import CardPortfolio from '../Atoms/CardPortfolio';
 
 function Projects({ setActiveSection }) {
+    const SkylineNews = {
+        img: "/images/skyline-news.png",
+        name: "Skyline News",
+        description:
+            "A modern news website integrated with the NY Times API and real-time weather information.",
+        skills: [FaReact],
+        url_git: "https://github.com/DevVasconcelos/skyline-news",
+        url_project: "https://devvasconcelos.github.io/skyline-news/"
+    };
     const EpicGames = {
         img: "/images/epicgames.png",
         name: "Epic Games",
@@ -30,6 +39,7 @@ function Projects({ setActiveSection }) {
                 <div
                     className='grid grid-cols-3 lg_1:grid-cols-3 lg_3:grid-cols-2 md_2:grid-cols-1 gap-6 justify-between'
                 >
+                    <CardPortfolio {...SkylineNews} />
                     <CardPortfolio {...EpicGames} />
                     <CardPortfolio {...Travellion} />
                 </div>
