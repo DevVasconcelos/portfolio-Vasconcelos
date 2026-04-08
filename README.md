@@ -8,7 +8,7 @@ This project was built to serve as a professional portfolio website, with a clea
 
 Access the deployed project here:
 
-[portfolio-vasconcelos.vercel.app](https://portfolio-vasconcelos.vercel.app/)
+[portfolio-vasconcelos.vercel.app](https://ben-hur-vasconcelos.vercel.app/)
 
 ## About the Project
 
