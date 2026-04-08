@@ -16,10 +16,10 @@ function Projects({ setActiveSection }) {
         img: "/images/travellion.png",
         name: "Travellion",
         description:
-            "O projeto em questão, é um portfólio e blog especialmente desenvolvido para um talentoso artista 3D. Além de destacar suas criações impressionantes, o site oferece um CMS personalizado que permite ao artista criar e gerenciar suas próprias postagens, garantindo assim uma plataforma dinâmica e atualizada para compartilhar seu trabalho e insights criativos",
+            "Landing page developed with HTML and CSS, focused on semantic structure, modern layout, and essential front-end fundamentals such as spacing, typography, visual hierarchy, and section organization.",
         skills: [FaReact],
-        url_git: "https://github.com/DevVasconcelos/Epic-Games",
-        url_project: "https://epic-games-beige.vercel.app/"
+        url_git: "#",
+        url_project: "#"
     };
 
     return (

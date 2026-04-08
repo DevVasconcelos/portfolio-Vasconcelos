@@ -8,7 +8,7 @@ const ralewaySans = Raleway({
 });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Ben-hur",
   description: "",
 };
 
