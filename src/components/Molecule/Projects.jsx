@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaChevronLeft, FaChevronRight, FaReact } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaCss3, FaHtml5, FaReact } from 'react-icons/fa';
 import CardPortfolio from '../Atoms/CardPortfolio';
 
 function Projects({ setActiveSection }) {
@@ -17,7 +17,7 @@ function Projects({ setActiveSection }) {
         name: "Epic Games",
         description:
             "A static front-end project inspired by the Epic Games Store interface, built to practice HTML and CSS by recreating a modern gaming storefront layout.",
-        skills: [FaReact],
+        skills: [FaHtml5, FaCss3],
         url_git: "https://github.com/DevVasconcelos/Epic-Games",
         url_project: "https://epic-games-beige.vercel.app/"
     };
@@ -26,7 +26,7 @@ function Projects({ setActiveSection }) {
         name: "Travellion",
         description:
             "Landing page developed with HTML and CSS, focused on semantic structure, modern layout, and essential front-end fundamentals such as spacing, typography, visual hierarchy, and section organization.",
-        skills: [FaReact],
+        skills: [FaHtml5, FaCss3],
         url_git: "#",
         url_project: "#"
     };
